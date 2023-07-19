@@ -1,0 +1,4 @@
+{
+    "dotnet.defaultSolution": "basics-of-c-sharp.sln",
+    "editor.acceptSuggestionOnEnter": "on"
+}
