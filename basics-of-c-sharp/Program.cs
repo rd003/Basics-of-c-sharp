@@ -1,6 +1,3 @@
-﻿// Lookup table
-using BasicsOfCSharp.DictionaryUseCases;
+﻿using BasicsOfCSharp.DictionaryUseCases;
 
-LookupTable.ExecuteMethod();
-
-
+Mapping.ExecuteMethod();
