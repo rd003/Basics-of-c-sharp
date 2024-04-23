@@ -1,3 +1,4 @@
-﻿using BasicsOfCSharp.DictionaryUseCases;
+﻿// find dupicate names
+using BasicsOfCSharp.DictionaryUseCases;
 
-Mapping.ExecuteMethod();
+DuplicateOccurences.ExecuteMethod();
