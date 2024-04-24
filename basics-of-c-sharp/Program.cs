@@ -1,3 +1,3 @@
 ﻿using BasicsOfCSharp.FindDuplicates;
 
-ByHashset.ExecuteMethod();
+ByLinq.ExecuteMethod();
