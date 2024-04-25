@@ -1,3 +1,3 @@
-﻿using BasicsOfCSharp.FindDuplicates;
+﻿using BasicsOfCSharp.TowSum;
 
-ByDictionary.ExecuteMethod();
+NaiveApproach.ExecuteMethod();
