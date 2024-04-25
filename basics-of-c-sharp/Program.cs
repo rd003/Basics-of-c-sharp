@@ -1,3 +1,3 @@
 ﻿using BasicsOfCSharp.TowSum;
 
-NaiveApproach.ExecuteMethod();
+TwoSumOptimized.ExecuteMethod();
