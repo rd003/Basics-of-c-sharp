@@ -1,3 +1,3 @@
-﻿using BasicsOfCSharp.TowSum;
+﻿using BasicsOfCSharp.Fibonacci;
 
-TwoSumOptimized.ExecuteMethod();
+Fibonacci.PrintSeries();
