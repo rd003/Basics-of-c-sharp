@@ -13,7 +13,8 @@ public class Fibonacci
             // FibonacciBasic(num);
             for (int n = 1; n <= num; n++)
             {
-                int fib = FibonacciIterative.GetNthFibonacciNumber(n);
+                // int fib = FibonacciIterative.GetNthFibonacciNumber(n);
+                int fib = FibonacciRecursive.GetNthFibonacciNumber(n);
                 Console.Write($"{fib} ");
             }
             Console.WriteLine();

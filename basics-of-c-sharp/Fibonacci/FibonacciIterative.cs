@@ -2,7 +2,7 @@ namespace BasicsOfCSharp.Fibonacci;
 
 public class FibonacciIterative
 {
-    public static int GetNthFibonacciNumber(int n = 1)
+    public static int GetNthFibonacciNumber(int n)
     {
         if (n <= 1)
             return n;
