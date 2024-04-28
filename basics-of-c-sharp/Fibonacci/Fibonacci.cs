@@ -14,7 +14,8 @@ public class Fibonacci
             for (int n = 1; n <= num; n++)
             {
                 // int fib = FibonacciIterative.GetNthFibonacciNumber(n);
-                int fib = FibonacciRecursive.GetNthFibonacciNumber(n);
+                // int fib = FibonacciRecursive.GetNthFibonacciNumber(n);
+                int fib = FibonacciMemoization.GetNthFibonacciNumber(n);
                 Console.Write($"{fib} ");
             }
             Console.WriteLine();
