@@ -11,11 +11,13 @@ public class Fibonacci
         else
         {
             // FibonacciBasic(num);
-            for (int n = 1; n <= num; n++)
+            //FibonacciDynamicProg.PrintSeries(6);
+            for (int n = 0; n < num; n++)
             {
                 // int fib = FibonacciIterative.GetNthFibonacciNumber(n);
                 // int fib = FibonacciRecursive.GetNthFibonacciNumber(n);
-                int fib = FibonacciMemoization.GetNthFibonacciNumber(n);
+                //int fib = FibonacciMemoization.GetNthFibonacciNumber(n);
+                int fib = FibonacciDynamicProg.GetNthFibonacciNumber(n);
                 Console.Write($"{fib} ");
             }
             Console.WriteLine();
