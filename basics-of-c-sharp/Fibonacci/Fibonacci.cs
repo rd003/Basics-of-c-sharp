@@ -12,12 +12,13 @@ public class Fibonacci
         {
             // FibonacciBasic(num);
             //FibonacciDynamicProg.PrintSeries(6);
-            for (int n = 0; n < num; n++)
+            for (int n = 1; n <= num; n++)
             {
                 // int fib = FibonacciIterative.GetNthFibonacciNumber(n);
                 // int fib = FibonacciRecursive.GetNthFibonacciNumber(n);
                 //int fib = FibonacciMemoization.GetNthFibonacciNumber(n);
-                int fib = FibonacciDynamicProg.GetNthFibonacciNumber(n);
+                // int fib = FibonacciDynamicProg.GetNthFibonacciNumber(n);
+                int fib = FibonacciExpression.GetNthFibonacciNumber(n);
                 Console.Write($"{fib} ");
             }
             Console.WriteLine();
