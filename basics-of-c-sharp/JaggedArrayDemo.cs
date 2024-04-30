@@ -37,4 +37,29 @@ public class JaggedArrayDemo
 
     }
 
+    public static void MethodTwo()
+    {
+        int[][,] jaggedArray = [
+            new int[,]{{5,7},{17,9}},
+            new int[,]{{1,3},{2,4},{3,6}},
+            new int[,] {{11,10},{1001,1005},{1925,2981}}
+        ];
+        // Console.WriteLine(jaggedArray[0][1, 0]);
+        for (int i = 0; i < jaggedArray.Length; i++)
+        {
+            // Console.Write($"length of jaggedArray {i}={jaggedArray[i].GetLength(0)}");
+            for (int j = 0; j < jaggedArray[i].GetLength(0); j++)
+            {
+                Console.Write("[");
+                for (int k = 0; k < jaggedArray[i].GetLength(1); k++)
+                {
+                    Console.Write($"{jaggedArray[i][j, k]} ");
+                }
+                Console.Write("]");
+                Console.Write(" ");
+            }
+            Console.WriteLine();
+        }
+    }
+
 }

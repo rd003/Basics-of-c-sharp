@@ -1,3 +1,3 @@
-﻿JaggedArrayDemo.MethodOne();
+﻿JaggedArrayDemo.MethodTwo();
 
 Console.ReadKey();
