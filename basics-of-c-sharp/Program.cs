@@ -1,3 +1,3 @@
-﻿using BasicsOfCSharp.Fibonacci;
+﻿JaggedArrayDemo.MethodOne();
 
-Fibonacci.PrintSeries();
+Console.ReadKey();
