@@ -1,6 +1,6 @@
 ﻿// The Three Parts of a LINQ Query:
 // 1. Data source.
-int[] numbers = [0, 1, 2, 3, 4, 5, 6];
+int[] numbers = Enumerable.Range(1, 10).ToArray();
 
 // 2. Query creation.
 // var numQuery = from num in numbers
