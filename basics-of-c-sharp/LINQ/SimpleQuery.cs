@@ -18,11 +18,25 @@ public class SimpleQuery
     new Student("Eugene",  "Zabokritski", 121, [96, 85, 91, 60]),
     new Student("Michael", "Tucker",      122, [94, 92, 91, 91])];
 
-        var studentQuery = from student in students where student.Scores[0] > 90 select student;
+        //var studentQuery = from student in students where student.Scores[0] > 90 select student;
         // var studentQuery = students.Where(student => student.Scores[0] > 90);
-        foreach (Student student in studentQuery)
+        // foreach (Student student in studentQuery)
+        // {
+        //     Console.WriteLine($"{student.First}{student.Last}");
+        // }
+
+        // grouping
+        IEnumerable<IGrouping<char, Student>> studentQuery =
+        from student in students
+        group student by student.Last[0];
+
+        foreach (IGrouping<char, Student> studentGroup in studentQuery)
         {
-            Console.WriteLine($"{student.First}{student.Last}");
+            Console.WriteLine(studentGroup.Key);
+            foreach (Student student in studentGroup)
+            {
+                Console.WriteLine($"{student.Last},{student.First}");
+            }
         }
 
         Console.ReadLine();
