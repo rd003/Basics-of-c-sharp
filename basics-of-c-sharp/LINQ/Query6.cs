@@ -1,5 +1,4 @@
-using Microsoft.VisualBasic;
-
+namespace BasicsOfCSharp.LINQ;
 public class Order
 {
     public int OrderId { get; set; }
@@ -37,18 +36,20 @@ public class Query6
         var data = (from customer in customers
                     join order in orders
                     on customer.CustomerId equals order.OrderId
-                    where order.OrderDate == DateTime.Now.AddMonths(-1)
+                    where order.OrderDate >= DateTime.Now.AddMonths(-1)
                     group order by order.CustomerId into groupedOrder
                     select new
                     {
-                        Key = groupedOrder.Key,
+                        CustomerId = groupedOrder.Key,
+                        CustomerName = customers.First(a => a.CustomerId == groupedOrder.Key).CustomerName,
                         TotalSpent = groupedOrder.Sum(g => g.TotalAmount)
-                    }).OrderByDescending(a => a.TotalSpent);
+                    }
+                    ).OrderByDescending(a => a.TotalSpent).Take(3);
         foreach (var customer in data)
         {
-            Console.WriteLine($"{customer.Key}: {customer.TotalSpent}");
+            Console.WriteLine($"[{customer.CustomerId}][{customer.CustomerName}]: {customer.TotalSpent}");
         }
-
+        Console.ReadLine();
     }
 
 }
