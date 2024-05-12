@@ -1,5 +1,5 @@
 ﻿using BasicsOfCSharp.LINQ;
 
-Query6.Execute();
+Query7.Execute();
 
-//https://learn.microsoft.com/en-us/dotnet/csharp/linq/get-started/walkthrough-writing-queries-linq#order-the-query-results
+//https://learn.microsoft.com/en-us/dotnet/csharp/linq/get-started/walkthrough-writing-queries-linq#use-method-syntax-in-a-query-expression
