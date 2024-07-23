@@ -1,6 +1,6 @@
 namespace BasicsOfCSharp.OCP;
 
-public class Rectangle : IShape
+public class RectangleDrawStrategy : IShape
 {
     public void Draw()
     {

@@ -1,9 +1,9 @@
 namespace BasicsOfCSharp.OCP;
 
-public class Circle
+public class Circle : IShape
 {
     public void Draw()
     {
-        Console.WriteLine("Drawing shape");
+        Console.WriteLine("Drawing a circle");
     }
 }
