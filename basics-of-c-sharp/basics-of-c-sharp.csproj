@@ -6,7 +6,7 @@
     <RootNamespace>basics_of_c_sharp</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>BasicsOfCSharp.OCP.ShapeTest</StartupObject>
+    <StartupObject>BasicsOfCSharp.OCPStrategy.ShapeTestDrive</StartupObject>
   </PropertyGroup>
 
 </Project>
