@@ -44,7 +44,7 @@ public class Penguin : Bird
 
     public override void MakeSound()
     {
-        Console.WriteLine("chirp..");
+        Console.WriteLine("Penguin's sound");
     }
 }
 

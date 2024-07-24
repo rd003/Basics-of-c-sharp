@@ -4,7 +4,10 @@ public abstract class Shape
 {
     protected IShapeDrawStrategy shapeDrawStrategy;
 
-    public abstract void Draw();
+    public void Draw()
+    {
+        shapeDrawStrategy.Draw();
+    }
 }
 
 public class Rectangle : Shape
@@ -13,10 +16,6 @@ public class Rectangle : Shape
     {
         shapeDrawStrategy = new RectangleDrawStrategy();
     }
-    public override void Draw()
-    {
-        shapeDrawStrategy.Draw();
-    }
 }
 
 public class Circle : Shape
@@ -24,9 +23,5 @@ public class Circle : Shape
     public Circle()
     {
         shapeDrawStrategy = new CircleDrawStrategy();
-    }
-    public override void Draw()
-    {
-        shapeDrawStrategy.Draw();
     }
 }

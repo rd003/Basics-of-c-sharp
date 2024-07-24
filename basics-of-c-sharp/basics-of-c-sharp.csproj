@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,7 +6,7 @@
     <RootNamespace>basics_of_c_sharp</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>basics_of_c_sharp.LSP.V.BirdTest</StartupObject>
+    <StartupObject>basics_of_c_sharp.DIP.DIPTest</StartupObject>
   </PropertyGroup>
 
 </Project>
