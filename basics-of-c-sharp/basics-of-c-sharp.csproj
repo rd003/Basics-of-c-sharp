@@ -6,7 +6,7 @@
     <RootNamespace>basics_of_c_sharp</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>basics_of_c_sharp.DesignPatterns.FactoryMethod.NotificationTest</StartupObject>
+    <StartupObject>basics_of_c_sharp.DesignPatterns.ObserverPattern.ClockTest</StartupObject>
   </PropertyGroup>
 
 </Project>
