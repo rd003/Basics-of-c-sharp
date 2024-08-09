@@ -6,7 +6,7 @@
     <RootNamespace>basics_of_c_sharp</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>basics_of_c_sharp.Property.PropertyTestDrive</StartupObject>
+    <StartupObject>basics_of_c_sharp.DesignPatterns.Facade.FacadePatternTestDrive</StartupObject>
   </PropertyGroup>
 
 </Project>
