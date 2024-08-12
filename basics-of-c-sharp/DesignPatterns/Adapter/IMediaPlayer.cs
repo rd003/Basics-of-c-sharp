@@ -1,5 +1,4 @@
-﻿using static basics_of_c_sharp.DesignPatterns.Adapter.AudioPlayer;
-
+﻿
 namespace basics_of_c_sharp.DesignPatterns.Adapter;
 
 // target interface
@@ -12,7 +11,7 @@ public class AudioPlayer : IMediaPlayer
 {
     public void Play(string audioType, string fileName)
     {
-        if(audioType== "mp3")
+        if (audioType == "mp3")
         {
             Console.WriteLine($"Playing mp3 file. Name: {fileName}");
         }
@@ -21,6 +20,7 @@ public class AudioPlayer : IMediaPlayer
             Console.WriteLine("Unsupported Audio type");
         }
     }
+}
 
     // We have a VideoPlayer interface that can play media files in .mp4 format.
 
@@ -63,7 +63,6 @@ public class AudioPlayer : IMediaPlayer
             }
         }
     }
-}
 
 public class MediaPlayerTestDrive
 {
@@ -78,7 +77,7 @@ public class MediaPlayerTestDrive
         // playing video with video player
         Console.WriteLine("\nPlaying video in video player");
 
-        Mp4Player videoPlayer = new Mp4Player();
+        IVideoPlayer videoPlayer = new Mp4Player();
         videoPlayer.PlayVideo("video1.mp4");
 
         // playing video as mp4 audio with media player
